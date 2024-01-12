@@ -48,6 +48,7 @@ RSpec.describe FractionalIndexing do
       test('a00', 'a1', 'invalid order key: a00')
       test('0', '1', 'invalid order key head: 0')
       test('a1', 'a0', 'a1 >= a0')
+      test('a0', 'a00V', 'a00G')
     end
   end
 

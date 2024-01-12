@@ -32,7 +32,7 @@ module FractionalIndexing
         n += 1
       end
       if n > 0
-        return b[0, n] + midpoint(a[n..-1], b[n..-1], digits)
+        return b[0, n] + midpoint((a[n..-1] || ""), b[n..-1], digits)
       end
     end
 
